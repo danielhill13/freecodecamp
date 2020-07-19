@@ -7,19 +7,14 @@
 //     Remember, you can access object properties through either dot notation or[] notation.
 
 function truthCheck(collection, pre) {
-    var counter = 0;
-    console.log("Array length is " + collection.length);
+    var myThing = arguments[1];
     for(let i=0;i < collection.length; i++){
-        if (pre){
-            counter ++;
-            console.log (counter);
+        if (!collection[i][myThing]){
+            return false;
         }
-    }
-    if( counter === collection.length){
-        return true;
-    }else {
-        return false;
-    }
+   
+   }
+return true;
 }
 
 truthCheck([{ "user": "Tinky-Winky", "sex": "male" }, { "user": "Dipsy", "sex": "male" }, { "user": "Laa-Laa", "sex": "female" }, { "user": "Po", "sex": "female" }], "sex");
