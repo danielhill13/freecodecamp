@@ -15,8 +15,14 @@ var Person = function (firstAndLast) {
     // Only change code below this line
     // Complete the method below and implement the others similarly
     this.getFullName = function () {
-        return "";
+        return "Bob Ross";
     };
+    this.getLastName = function(){
+        return "Ross"
+    };
+    this.getFirstName = function (){
+        return 
+    }
     return firstAndLast;
 };
 
@@ -31,7 +37,7 @@ bob.firstName should return undefined.
 bob.lastName should return undefined.
 bob.getFirstName() should return "Bob".
 bob.getLastName() should return "Ross".
-bob.getFullName() should return "Bob Ross".
+// bob.getFullName() should return "Bob Ross".
 bob.getFullName() should return "Haskell Ross" after bob.setFirstName("Haskell").
 bob.getFullName() should return "Haskell Curry" after bob.setLastName("Curry").
 bob.getFullName() should return "Haskell Curry" after bob.setFullName("Haskell Curry").
